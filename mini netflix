@@ -1,0 +1,93 @@
+#include <stdio.h>
+
+int main() 
+{
+  int genero = 0;
+  int n = 0;
+  int filme = 0;
+  int filme1 = 0;
+  int av = 0;
+
+  printf("\nSeja bem vindo ao seu programa de filmes.\n");
+  printf("\nDeseja assistir um filme? digite 1 para SIM\n\nDigite uma opção:\n");
+  scanf("%d", &n);
+
+  printf("\n--------------------------------------------\n");
+  
+  if (n == 1)
+    printf("\nVou te passar as opções de filmes. Aproveite! \n");
+  
+  else
+  {
+    printf("\nOção inválida. Tente novamente.\n");
+    
+    while ( n != 1 && n != 2)
+      {
+        printf("\nDeseja assistir um filme? digite 1 para SIM\n\nDigite uma opção:\n");
+        scanf("%d", &n);
+      }
+    if ( n == 1)
+      printf("\nVou te passar as opções de gêneros. Aroveite! \n");
+  }
+  
+if (n == 1)
+{
+printf("\nGêneros: \n Comédia - 1\n Terror - 2\n Fantasia - 3\n Ficção científica - 4\n Romance - 5\n");
+
+  printf("\nQual gênero você deseja? \n");
+  scanf("%d", &genero);
+
+  printf("\n--------------------------------------------\n");
+  
+  switch (genero)
+    {
+      case 1:
+      printf("\nVocê escolheu o gênero COMÉDIA. \n");
+      printf("\n AS BRANQUELAS - 1\n ALERTA VERMELHO - 2\n JUMANJI - 3\n O PROJETO ADAM - 4\n ");
+      printf("\nQual a opção? \n");
+      scanf("%d", &filme1);
+      printf("\nVocê fez uma ótima escolha. Aproveite!\n");
+      break;
+      
+      case 2:
+      printf("\nVocê escolheu o gênero TERROR. \n");
+      printf("\n CÉU VERMELHO-SANGUE - 1\n AS RUINAS - 2\n NATAL SANGRENTO - 3\n A ÚTIMA CASA - 4\n");
+      printf("\nQual a opção? \n");
+      scanf("%d", &filme1);
+      printf("\nVocê fez uma ótima escolha. Aproveite!\n");
+      break;
+
+      case 3:
+       printf("\nVocê escolheu o gênero FANTASIA. \n");
+      printf("\n AS PASSAGEIRAS - 1\n FERA DO MAR - 2\n A MÚMIA - 3\n A GRANDE MURALHA - 4\n");
+      printf("\nQual a opção? \n");
+      scanf("%d", &filme1);
+      printf("\nVocê fez uma ótima escolha. Aproveite!\n");
+      break;
+
+      case 4:
+      printf("\nVocê escolheu o gênero FICÇÃO CIENTÍFICA. \n");
+      printf("\n O HOMEM INVISÍVEL - 1\n Á TONA - 2\n LUCY - 3\n DIVERGENTE - 4\n");
+      printf("\nQual a opção? \n");
+      scanf("%d", &filme1);
+      printf("\nVocê fez uma ótima escolha. Aproveite!\n");  
+      break;
+
+      case 5:
+       printf("\nVocê escolheu o gênero ROMANCE. \n");
+      printf("\n CONTINÊNCIA DO AMOR - 1\n AMOR COM DATA MARCADA - 2\n BARRACA DO BEIJO - 3\n POR LUGARES INCRÍVEIS - 4\n");
+      printf("\nQual a opção? \n");
+      scanf("%d", &filme1);
+      printf("\nVocê fez uma ótima escolha. Aproveite! \n");
+      break;
+
+      default:
+      break;
+      
+    }
+} 
+printf("\n.....\n");
+printf("\nDeseja avaliar o filme? (ÓTIMO = 1  BOM = 2  RUIM = 3)\n");
+scanf("%d", &av);
+printf("\nObrigado por assistir! Até a próxima.");
+}
